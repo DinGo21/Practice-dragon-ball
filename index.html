@@ -4,28 +4,33 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Dragon ball Api v2.0</title>
-	<link rel="preload" href="css/normalize.css" as="style">
-	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+	<link rel="preload" href="css/normalize.css" as="style"/>
+	<link rel="preload" href="css/style.css" as="style"/>
 	<link rel="stylesheet" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 	<header class="header">
 		<img class="header__logo" src="img/icon.png" alt="Title Logo"/>
-		<h1 class="header__title">Dragon Ball Apiv2.0</h1>
+		<nav class="nav">
+			<a class="nav__link nav__link--active" href="index.html">Characters</a>
+			<a class="nav__link" href="planets.html">Planets</a>
+		</nav>
 	</header>
-	<nav class="nav">
-		<a class="nav__link nav__link--active" href="index.html">Characters</a>
-		<a class="nav__link" href="planets.html">Planets</a>
-	</nav>
-	<section>
-		<h2>Dragon Ball Characters</h2>
+	<section class="banner">
+		<div class="banner__content">
+			<h1 class="banner__title">Dragon Ball API 2.0</h1>
+			<h2 class="banner__main">Dragon Ball Characters</h2>
+		</div>
 	</section>
 	<main class="characters">
 
 	</main>
 	<footer class="footer">
-		<p><> by <span>Diego Santamaria</span> 2024</p>
+		<p class="footer__credits"><> by <span>Diego Santamaria</span> 2024</p>
 		<div class="contacts">
 			<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="#ffffff"  
 				class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" 

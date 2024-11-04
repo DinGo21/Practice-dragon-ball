@@ -1,3 +1,13 @@
+:root {
+	--white: #f8f8f8;
+	--black: #282929;
+	--gray: #3b3b3b;
+	--primary: #ff6200;
+	--secondary: #ffc800;
+}
+
+/* General */
+
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
@@ -5,8 +15,127 @@ html {
 
 *, *:before, *:after {
 	box-sizing: inherit;
-}  
+}
 
 body {
 	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	background-color: var(--black);
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 9rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Header */
+
+.header {
+	background-color: var(--primary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+.header__logo {
+	width: 6rem;
+	height: 6rem;
+}
+
+.nav {
+	background-color: var(--white);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border-radius: 1rem;
+	gap: 0.5rem;
+}
+
+.nav__link {
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--gray);
+	transition: color 0.4s ease;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.nav__link:hover {
+	color: var(--secondary);
+}
+
+.nav__link--active, .nav__link--active:hover {
+	color: var(--white);
+}
+
+.nav__link--active {
+	background-color: var(--secondary);
+}
+
+/* Banner */
+
+.banner {
+	background-image: url(../img/banner.jpg);
+	background-repeat: no-repeat;
+	height: 40rem;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+}
+
+.banner__content {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner__title, .banner__main {
+	color: var(--secondary);
+}
+
+.banner__title {
+	margin: 1rem;
+}
+
+.banner__main {
+	margin: 1rem;
+}
+
+/* Footer */
+
+.footer {
+	background-color: var(--gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+}
+
+.footer__credits {
+	color: var(--white);
+}
+
+.footer__credits span {
+	font-weight: 500;
 }
