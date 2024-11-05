@@ -69,10 +69,11 @@ function createPlanetCards({image, name, isDestroyed})
 async function displayElementCards(elementId, request)
 {
 	const element = document.getElementById(elementId);
+	const elementCount = document.getElementById("count")
 	const elementData = await fetchJson(request);
 	let	  elementCards;
 
-	if (!element)
+	if (!element || !elementCount)
 	{
 		return console.error("Error: couldn't get element by id:", elementId);
 	}
@@ -89,6 +90,7 @@ async function displayElementCards(elementId, request)
 		elementCards = elementData.items.map(createPlanetCards).join('');
 	}
 	element.innerHTML = elementCards;
+	elementCount.innerHTML += elementData.meta.totalItems;
 }
 
 if (fileName === "index.html")

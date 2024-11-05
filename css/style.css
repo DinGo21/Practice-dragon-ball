@@ -155,8 +155,18 @@ img {
 	padding: 2rem;
 }
 
-.footerCredits {
+.footerCount, .footerCredits {
 	color: var(--white);
+	
+}
+
+.footerCount {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 1rem;
+	width: 20%;
+	border-bottom: var(--white) solid 0.2rem;
 }
 
 .footerCredits span {
