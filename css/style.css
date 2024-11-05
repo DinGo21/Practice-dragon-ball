@@ -97,6 +97,7 @@ a {
 	background-size: cover;
 	text-align: center;
 	position: relative;
+	margin-bottom: 5rem;
 }
 
 .banner__content {
@@ -122,6 +123,13 @@ a {
 	margin: 1rem;
 }
 
+/* main */
+
+.main {
+	width: 80%;
+	margin: auto;
+}
+
 /* Footer */
 
 .footer {
@@ -138,4 +146,5 @@ a {
 
 .footer__credits span {
 	font-weight: 500;
+	text-decoration: underline var(--primary) 0.1rem;
 }
