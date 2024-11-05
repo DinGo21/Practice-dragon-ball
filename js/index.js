@@ -1,5 +1,6 @@
 const charactersRequest = "https://dragonball-api.com/api/characters?limit=58";
 const planetsRequest = "https://dragonball-api.com/api/planets?limit=20";
+const fileName = window.location.pathname.split("/").pop();
 
 async function fetchJson(request)
 {
@@ -40,14 +41,29 @@ function createCharacterCards({image, name, race, gender, ki, maxKi, affiliation
 
 function createPlanetCards({image, name, isDestroyed})
 {
-	return `
+	let planetHTML = `
 		<div class="planet">
 			<img class="planetImage" src="${image}"/>
 			<div class="planetCard">
 				<h4 class="planetName">${name}</h4>
+	`;
+	if (isDestroyed === true)
+	{
+		planetHTML += `
+				<p class="planetState">Destroyed</p>
+		`
+	}
+	else
+	{
+		planetHTML += `
+				<p class="planetState">Alive</p>
+		`
+	}
+	planetHTML += `
 			</div>
 		</div>
 	`;
+	return planetHTML;
 }
 
 async function displayElementCards(elementId, request)
@@ -75,5 +91,11 @@ async function displayElementCards(elementId, request)
 	element.innerHTML = elementCards;
 }
 
-displayElementCards("characters", charactersRequest);
-displayElementCards("planets", planetsRequest);
+if (fileName === "index.html")
+{
+	displayElementCards("characters", charactersRequest);
+}
+if (fileName === "planets.html")
+{
+	displayElementCards("planets", planetsRequest);
+}
