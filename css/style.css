@@ -39,11 +39,11 @@ h2 {
 }
 
 h4 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 
 h5 {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 }
 
 a {
@@ -58,18 +58,29 @@ img {
 /* Header */
 
 .header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	box-shadow: 0.1rem 0.3rem 0.1rem var(--gray);
+	z-index: 1;
 	background-color: var(--primary);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	padding: 0.5rem;
 	padding-left: 4rem;
 	padding-right: 4rem;
 }
 
 .headerLogo {
-	width: 6rem;
-	height: 6rem;
+	width: 5rem;
+	height: 5rem;
+}
+
+.nav, .navLink {
+	padding: 0.5rem;
+	border-radius: 1rem;
 }
 
 .nav {
@@ -78,8 +89,6 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
-	border-radius: 1rem;
 	gap: 0.5rem;
 }
 
@@ -88,8 +97,6 @@ img {
 	font-weight: 500;
 	color: var(--gray);
 	transition: color 0.4s ease;
-	padding: 1rem;
-	border-radius: 1rem;
 }
 
 .navLink:hover {
@@ -107,6 +114,7 @@ img {
 /* Banner */
 
 .banner {
+	margin-top: 6rem;
 	background-image: url(../img/banner.jpg);
 	background-repeat: no-repeat;
 	height: 40rem;
@@ -165,7 +173,7 @@ img {
 	font-size: 1.5rem;
 	font-weight: 700;
 	padding: 1rem;
-	width: 20%;
+	width: 25rem;
 	border-bottom: var(--white) solid 0.2rem;
 }
 

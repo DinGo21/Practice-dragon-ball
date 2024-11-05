@@ -21,21 +21,21 @@
 }
 
 .planet {
-	width: 50rem;
+	width: 45rem;
 }
 
 .characterImage {
-	height: 30rem;
+	height: 25rem;
 }
 
 .planetImage {
-	height: 35rem;
+	height: 27rem;
 	margin-bottom: 0.5rem;
 }
 
 .characterCard, .characterName, .planetName {
 	border-radius: 1rem;
-	padding: 1.5rem;
+	padding: 1rem;
 }
 
 .characterName, .planetName {
@@ -55,7 +55,7 @@
 }
 
 .characterGenderRace {
-	font-size: 2.0rem;
+	font-size: 1.8rem;
 }
 
 .characterInfo h5 {
@@ -63,7 +63,7 @@
 }
 
 .characterInfo p {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 .planetState {
