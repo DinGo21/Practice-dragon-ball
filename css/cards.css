@@ -1,0 +1,71 @@
+:root {
+	--white: #f8f8f8;
+	--black: #282929;
+	--gray: #3b3b3b;
+	--primary: #ff6200;
+	--secondary: #ffc800;
+	--tertiary: #0187ca;
+}
+
+.character, .planet {
+	border-radius: 1rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: var(--white);
+	text-align: center;
+	color: var(--black);
+}
+
+.character {
+	width: 30rem;
+}
+
+.planet {
+	width: 50rem;
+}
+
+.characterImage {
+	height: 30rem;
+}
+
+.planetImage {
+	height: 35rem;
+	margin-bottom: 0.5rem;
+}
+
+.characterCard, .characterName, .planetName {
+	border-radius: 1rem;
+	padding: 1.5rem;
+}
+
+.characterName, .planetName {
+	color: var(--gray);
+	background-color: var(--secondary);
+}
+
+.characterCard, .planetCard {
+	background-color: var(--tertiary);
+	border-radius: 1rem;
+	padding-bottom: 0.2rem;
+}
+
+.characterGenderRace, .characterInfo p, .planetState {
+	color: var(--white);
+	font-weight: 500;
+}
+
+.characterGenderRace {
+	font-size: 2.0rem;
+}
+
+.characterInfo h5 {
+	color: var(--secondary);
+}
+
+.characterInfo p {
+	font-size: 1.7rem;
+}
+
+.planetState {
+	font-size: 2rem;
+}

@@ -1,3 +1,5 @@
+@import url(cards.css);
+
 :root {
 	--white: #f8f8f8;
 	--black: #282929;
@@ -65,7 +67,7 @@ img {
 	padding-right: 4rem;
 }
 
-.header__logo {
+.headerLogo {
 	width: 6rem;
 	height: 6rem;
 }
@@ -81,7 +83,7 @@ img {
 	gap: 0.5rem;
 }
 
-.nav__link {
+.navLink {
 	font-size: 2rem;
 	font-weight: 500;
 	color: var(--gray);
@@ -90,15 +92,15 @@ img {
 	border-radius: 1rem;
 }
 
-.nav__link:hover {
+.navLink:hover {
 	color: var(--secondary);
 }
 
-.nav__link--active, .nav__link--active:hover {
+.navLinkActive, .navLinkActive:hover {
 	color: var(--white);
 }
 
-.nav__link--active {
+.navLinkActive {
 	background-color: var(--secondary);
 }
 
@@ -114,7 +116,7 @@ img {
 	margin-bottom: 5rem;
 }
 
-.banner__content {
+.bannerContent {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
@@ -125,7 +127,7 @@ img {
 	align-items: center;
 }
 
-.banner__title, .banner__main {
+.bannerTitle, .bannerMain {
 	color: var(--secondary);
 	margin: 1rem;
 }
@@ -142,79 +144,6 @@ img {
 	margin-bottom: 2.5rem;
 }
 
-.character {
-	color: var(--black);
-	border-radius: 1rem;
-	text-align: center;
-	background-color: var(--white);
-	width: 30rem;
-	padding: 1.5rem;
-	margin-bottom: 1rem;
-}
-
-.characterImage {
-	height: 30rem;
-}
-
-.characterCard, .characterName, .planetName {
-	border-radius: 1rem;
-	padding: 1.5rem;
-}
-
-.characterCard {
-	background-color: var(--tertiary);
-}
-
-.characterName {
-	color: var(--gray);
-	background-color: var(--secondary);
-}
-
-.characterGenderRace {
-	font-size: 2.0rem;
-	font-weight: 500;
-	color: var(--white);
-}
-
-.characterInfo h5 {
-	color: var(--secondary);
-}
-
-.characterInfo p {
-	color: var(--white);
-	font-size: 1.7rem;
-	font-weight: 500;
-}
-
-.planet {
-	width: 50rem;
-	text-align: center;
-	background-color: var(--white);
-	padding: 1rem;
-	border-radius: 1rem;
-}
-
-.planetImage {
-	height: 35rem;
-	margin-bottom: 0.5rem;
-}
-
-.planetCard {
-	background-color: var(--tertiary);
-	border-radius: 1rem;
-	padding-bottom: 0.2rem;
-}
-
-.planetName {
-	color: var(--gray);
-	background-color: var(--secondary);
-}
-
-.planetState {
-	color: var(--white);
-	font-size: 2rem;
-	font-weight: 700;
-}
 
 /* Footer */
 
@@ -226,11 +155,11 @@ img {
 	padding: 2rem;
 }
 
-.footer__credits {
+.footerCredits {
 	color: var(--white);
 }
 
-.footer__credits span {
+.footerCredits span {
 	font-weight: 500;
 	text-decoration: underline var(--primary) 0.1rem;
 }
