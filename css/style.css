@@ -4,6 +4,7 @@
 	--gray: #3b3b3b;
 	--primary: #ff6200;
 	--secondary: #ffc800;
+	--tertiary: #0187ca;
 }
 
 /* General */
@@ -23,7 +24,7 @@ body {
 	background-color: var(--black);
 }
 
-h1, h2 {
+h1, h2, h4, h5 {
 	margin: 0;
 }
 
@@ -35,8 +36,21 @@ h2 {
 	font-size: 9rem;
 }
 
+h4 {
+	font-size: 2.4rem;
+}
+
+h5 {
+	font-size: 1.8rem;
+}
+
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 /* Header */
@@ -113,21 +127,93 @@ a {
 
 .banner__title, .banner__main {
 	color: var(--secondary);
-}
-
-.banner__title {
-	margin: 1rem;
-}
-
-.banner__main {
 	margin: 1rem;
 }
 
 /* main */
 
 .main {
-	width: 80%;
+	width: 95%;
 	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 4rem;
+	margin-bottom: 2.5rem;
+}
+
+.character {
+	color: var(--black);
+	border-radius: 1rem;
+	text-align: center;
+	background-color: var(--white);
+	width: 30rem;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.characterImage {
+	height: 30rem;
+}
+
+.characterCard, .characterName, .planetName {
+	border-radius: 1rem;
+	padding: 1.5rem;
+}
+
+.characterCard {
+	background-color: var(--tertiary);
+}
+
+.characterName {
+	color: var(--gray);
+	background-color: var(--secondary);
+}
+
+.characterGenderRace {
+	font-size: 2.0rem;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.characterInfo h5 {
+	color: var(--secondary);
+}
+
+.characterInfo p {
+	color: var(--white);
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.planet {
+	width: 50rem;
+	text-align: center;
+	background-color: var(--white);
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.planetImage {
+	height: 35rem;
+	margin-bottom: 0.5rem;
+}
+
+.planetCard {
+	background-color: var(--tertiary);
+	border-radius: 1rem;
+	padding-bottom: 0.2rem;
+}
+
+.planetName {
+	color: var(--gray);
+	background-color: var(--secondary);
+}
+
+.planetState {
+	color: var(--white);
+	font-size: 2rem;
+	font-weight: 700;
 }
 
 /* Footer */
