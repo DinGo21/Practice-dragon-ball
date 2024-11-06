@@ -36,7 +36,7 @@ function createCharacterCards({image, name, race, gender, ki, maxKi, affiliation
 				</div>
 			</div>
 		</div>
-	`;
+	`; ``
 }
 
 function createPlanetCards({image, name, isDestroyed})
