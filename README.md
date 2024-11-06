@@ -6,7 +6,7 @@
 
 A Brand new Dragon Ball API with redesigned looks and now featuring planets from the entire series! Check the info about your favorite characters and discover the most important places in the Dragon Ball universe.
 
-Visit the website following this //link.
+Visit the website using this [link](https://dingo21.github.io/Project-Dragon-Ball-API-v2.0/).
 
 ![Website screenshot](img/screenshot.png)
 
