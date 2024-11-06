@@ -17,7 +17,7 @@ The site uses the API provided by [The Dragonball API](https://web.dragonball-ap
 Download the latest source by running the command below:
 
 ```
-git clone git@github.com:DinGo21/Project-Dragon-Ball-API-v2.0.git dragon_ball_apiv2.0
+git clone https://github.com/DinGo21/Project-Dragon-Ball-API-v2.0.git
 ```
 
 ## Copyright
