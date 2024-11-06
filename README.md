@@ -6,9 +6,9 @@
 
 A Brand new Dragon Ball API with redesigned looks and now featuring planets from the entire series! Check the info about your favorite characters and discover the most important places in the Dragon Ball universe.
 
-Visit the website following this //link .
+Visit the website following this //link.
 
-![Character Card](img/screenshot1.png) ![Character Card](img/screenshot2.png)
+![Website screenshot](img/screenshot.png)
 
 The site uses the API provided by [The Dragonball API](https://web.dragonball-api.com/) made by Antonio Alvarez.
 
